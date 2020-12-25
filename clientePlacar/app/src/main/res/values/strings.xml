@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Placar Remoto</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="cronometro">Cronômetro</string>
+    <string name="mais_opcoes">Opções</string>
+    <string name="preferencias">Conectar</string>
+    <string name="title_activity_configuracoes">Configuracões</string>
+    <string name="title_activity_equipes">EquipesActivity</string>
+    <string name="title_activity_tela_menos">TelaMenosActivity</string>
+    <string name="title_activity_cronometro">cronometro</string>
+    <string name="action_settings">Settings</string>
+    <string name="valor_invalido">Valor Inválido</string>
+    <string name="fechar_programa">Você tem certeza que deseja fechar o programa? \n\n Caso você clique em sim o PROGRAMA será FECHADO...</string>
+    <string name="zerar_programa">Você tem certeza que deseja zerar o cronômetro? \n\n Caso você clique em sim o cronômetro partirá para o zero...</string>
+    <string name="string_zerar_cronometro">Zerar Cronômetro</string>
+    <string name="finalizar_aplicacao">Finalizar Aplicação?</string>
+
+
+</resources>

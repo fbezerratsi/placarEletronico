@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+        
+        <item 
+            android:icon="@drawable/ic_opcoes"
+            android:showAsAction="always"
+            android:title="@string/mais_opcoes">
+            
+            <menu>
+
+                <item
+                    android:id="@+id/menu_preferencias"
+                    android:icon="@drawable/ic_preferencias"
+                    android:showAsAction="always"
+                    android:title="@string/preferencias"/>
+                
+                <item
+                    android:id="@+id/menu_equipes"
+                    android:showAsAction="always"
+                    android:title="Setar Equipes"/>
+                <item
+                    android:id="@+id/inverter_posicao_equipe"
+                    android:showAsAction="always"
+                    android:title="Inverter Posição das Equipes"/>
+
+                <item
+                    android:id="@+id/menu_tela_menos"
+                    android:showAsAction="always"
+                    android:title="Tela Menos"/>
+
+                <item
+                    android:id="@+id/setar_cronometro"
+                    android:showAsAction="always"
+                    android:title="Setar Cronômetro"/>
+
+                <item
+                    android:id="@+id/zerar_cronometro"
+                    android:icon="@drawable/ic_opcoes"
+                    android:showAsAction="always"
+                    android:title="Zerar Cronômetro"/>
+                <item
+                    android:id="@+id/fechar"
+                    android:showAsAction="always"
+                    android:title="Fechar Cronômetro"/>
+                
+            </menu>
+        </item>
+    	<item
+            android:id="@+id/sair"
+    	    android:icon="@drawable/ic_opcoes"
+            android:showAsAction="always"
+            android:title="Sair">
+            
+    	    <menu>
+
+
+                
+            </menu>
+    	    
+    	</item>
+    
+</menu>
+<!-- From: file:/C:/Users/Felipe%20Bezerra/StudioProjects/clientePlacar/app/src/main/res/menu/menu_principal.xml -->

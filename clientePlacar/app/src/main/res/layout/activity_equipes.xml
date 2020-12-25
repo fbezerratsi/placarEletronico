@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txtEquipe2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtEquipe1"
+        android:layout_marginTop="50dp"
+        android:text="Digite o nome da Equipe 02:" />
+
+    <EditText
+        android:id="@+id/edtEquipe2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtEquipe2"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Nome da Equipe 02"
+        android:maxLength="10" 
+        android:textSize="30dp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtEquipe1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtEquipe1"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Nome da Equipe 01"
+        android:maxLength="10" 
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/txtEquipe1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:text="Digite o nome da Equipe 01:" />
+
+    <Button
+        android:id="@+id/btCadastrarEquipes"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtEquipe2"
+        android:layout_marginTop="41dp"
+        android:onClick="enviarNomeEquipe"
+        android:textSize="20dp"
+        android:text="Cadastrar Equipes" />
+
+</RelativeLayout>

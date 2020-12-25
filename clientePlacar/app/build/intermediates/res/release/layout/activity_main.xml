@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#000" >
+
+        
+    <Button
+        android:id="@+id/btCronometro"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:onClick="funcaoCronometro"
+        android:text="@string/cronometro"
+        android:textColor="#fff"
+		android:gravity="center"
+        android:background="@drawable/acao_button_cronometro"
+        android:textSize="40dp" />
+
+	<TextView
+		android:layout_width="150dp"
+		android:layout_height="50dp"
+		android:id="@+id/txtEquipe1"
+		android:layout_below="@+id/btCronometro"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_alignLeft="@+id/btCronometro"
+		android:textColor="#fff"
+		android:textSize="27dp"
+		android:gravity="center"
+		android:background="@drawable/screen_border"
+		android:text="Equipe 1" />
+	<TextView
+		android:layout_width="150dp"
+		android:layout_height="50dp"
+		android:id="@+id/txtEquipe2"
+		android:background="@drawable/screen_border"
+		android:layout_below="@+id/btCronometro"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="5dp"
+		android:layout_alignRight="@+id/btCronometro"
+		android:textColor="#fff"
+		android:gravity="center"
+		android:textSize="27dp"
+		android:text="Equipe 1" />
+
+   	<Button
+   	    android:id="@+id/btGol2"
+   	    android:layout_width="150dp"
+   	    android:layout_height="100dp"
+   	    android:layout_alignBaseline="@+id/btGol1"
+   	    android:layout_alignBottom="@+id/btGol1"
+   	    android:layout_alignParentRight="true"
+   	    android:background="@drawable/acao_button_gol"
+		android:layout_marginRight="5dp"
+   	    android:onClick="gol"
+   	    android:text="Gol 2 +"
+   	    android:textColor="#fff"
+   	    android:textSize="30dp" />
+
+   	<Button
+   	    android:id="@+id/btFalta2"
+   	    android:layout_width="150dp"
+   	    android:layout_height="50dp"
+   	    android:layout_alignBaseline="@+id/btFalta1"
+   	    android:layout_alignBottom="@+id/btFalta1"
+   	    android:layout_alignParentRight="true"
+   	    android:background="@drawable/acao_button_falta"
+		android:layout_marginRight="5dp"
+   	    android:onClick="faltas"
+   	    android:text="Faltas 2 +"
+   	    android:textColor="#fff"
+   	    android:textSize="30dp" />
+
+   	<Button
+   	    android:id="@+id/btCancelarTempo"
+   	    android:layout_width="80dp"
+   	    android:layout_height="60dp"
+   	    android:layout_alignBaseline="@+id/btTempo1"
+   	    android:layout_alignBottom="@+id/btTempo1"
+   	    android:layout_centerHorizontal="true"
+   	    android:background="@drawable/acao_button_tempo"
+   	    android:onClick="cancelarTempo"
+   	    android:text="X"
+   	    android:textStyle="bold"
+   	    android:textSize="20dp" />
+
+   	<Button
+   	    android:id="@+id/btTempo2"
+   	    android:layout_width="100dp"
+   	    android:layout_height="60dp"
+   	    android:layout_alignBaseline="@+id/btCancelarTempo"
+   	    android:layout_alignBottom="@+id/btCancelarTempo"
+   	    android:layout_alignParentRight="true"
+		android:layout_marginRight="5dp"
+   	    android:background="@drawable/acao_button_tempo"
+   	    android:onClick="tempo"
+   	    android:text="Tempo 2 +"
+   	    android:textStyle="bold"
+   	    android:textSize="20dp" />
+
+   	<Button
+   	    android:id="@+id/btFalta1"
+   	    android:layout_width="150dp"
+   	    android:layout_height="50dp"
+   	    android:layout_alignParentLeft="true"
+		android:layout_below="@+id/txtEquipe1"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+   	    android:layout_marginBottom="80dp"
+   	    android:onClick="faltas"
+   	    android:text="Faltas 1 +"
+   	    android:textColor="#fff"
+   	    android:background="@drawable/acao_button_falta"
+   	    android:textSize="30dp" />
+
+   	<Button
+   	    android:id="@+id/btTempo1"
+   	    android:layout_width="100dp"
+   	    android:layout_height="60dp"
+   	    android:layout_below="@+id/btFalta1"
+		android:layout_marginTop="-60dp"
+		android:layout_marginLeft="5dp"
+   	    android:background="@drawable/acao_button_tempo"
+   	    android:onClick="tempo"
+   	    android:text="Tempo 1 +"
+   	    android:textStyle="bold"
+   	    android:textSize="20dp" />
+
+   	<Button
+   	    android:id="@+id/btGol1"
+   	    android:layout_width="150dp"
+   	    android:layout_height="100dp"
+   	    android:layout_alignParentLeft="true"
+		android:layout_below="@+id/btTempo1"
+   	    android:layout_marginTop="19dp"
+		android:layout_marginLeft="5dp"
+   	    android:background="@drawable/acao_button_gol"
+   	    android:onClick="gol"
+   	    android:text="Gol 1 +"
+   	    android:textColor="#fff"
+   	    android:textSize="30dp" />
+
+
+
+</RelativeLayout>
+
+
+
+<!-- From: file:/C:/Users/Felipe%20Bezerra/StudioProjects/clientePlacar/app/src/main/res/layout/activity_main.xml -->

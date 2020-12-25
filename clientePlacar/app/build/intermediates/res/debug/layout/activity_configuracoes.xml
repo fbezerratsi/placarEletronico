@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Digite o endereço IP do SERVIDOR" />
+
+    <EditText
+        android:id="@+id/edtEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtLabel"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:textSize="30dp"
+        android:inputType="phone"
+        android:hint="192.168.0.1" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSetarEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtEndereco"
+        android:layout_marginTop="45dp"
+        android:onClick="setarEndereco"
+        android:text="Setar Endereço" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Felipe%20Bezerra/StudioProjects/clientePlacar/app/src/main/res/layout/activity_configuracoes.xml -->

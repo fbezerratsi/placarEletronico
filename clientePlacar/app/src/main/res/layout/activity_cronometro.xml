@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.com.bezerra.clienteplacar.cronometro">
+
+    <TextView
+        android:id="@+id/txtCronometro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:textColor="#fff"
+        android:text="00:00"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="-4dp"
+        android:layout_margin="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:layout_marginBottom="0dp"
+            android:id="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="mais1"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:text="-"
+            android:id="@+id/button2"
+            android:layout_below="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="53dp"
+            android:textStyle="bold"
+            android:onClick="menos1"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:id="@+id/button3"
+            android:onClick="mais2"
+            android:layout_above="@+id/button2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/button1" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:text="-"
+            android:id="@+id/button4"
+            android:layout_alignTop="@+id/button2"
+            android:layout_alignLeft="@+id/button3"
+            android:textStyle="bold"
+            android:onClick="menos2"/>
+
+        <EditText
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="-1dp"
+            android:background="#fff"
+            android:id="@+id/editText1"
+            android:enabled="false"
+            android:text="00"
+            android:gravity="center"
+            android:textSize="5mm"
+            android:layout_below="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/button4"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/button3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:background="#fff"
+            android:layout_alignTop="@+id/editText1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_alignRight="@+id/button3"
+            android:enabled="false"
+            android:text="00"
+            android:gravity="center"
+            android:textSize="5mm"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_above="@+id/button4"
+            android:layout_toRightOf="@+id/button1" />
+
+    </RelativeLayout>
+</RelativeLayout>
